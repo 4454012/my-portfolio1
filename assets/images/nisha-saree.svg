@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="silkGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#4a0e17" />
+      <stop offset="40%" stop-color="#7a1c29" />
+      <stop offset="100%" stop-color="#24070b" />
+    </linearGradient>
+    <linearGradient id="sareeGold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFEAA7" />
+      <stop offset="60%" stop-color="#F1C40F" />
+      <stop offset="100%" stop-color="#B7950B" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#silkGrad)" />
+  
+  <g transform="translate(60, 40)">
+    <rect x="0" y="0" width="220" height="320" rx="16" fill="#1f0509" stroke="url(#sareeGold)" stroke-width="2" />
+    <path d="M20 20 L200 20 L200 300 L20 300 Z" fill="none" stroke="#D4AF37" stroke-width="0.8" stroke-dasharray="4,4" />
+    
+    <path d="M60 70 Q110 50 160 80 Q170 180 140 260 Q110 270 80 250 Q60 170 60 70 Z" fill="#b8263d" opacity="0.8" />
+    <path d="M75 80 Q120 120 155 190" stroke="url(#sareeGold)" stroke-width="4" fill="none" />
+    <path d="M85 110 Q125 150 145 220" stroke="url(#sareeGold)" stroke-width="3" fill="none" />
+    <circle cx="110" cy="55" r="16" fill="#F1C40F" opacity="0.3" />
+  </g>
+
+  <g transform="translate(320, 90)">
+    <rect x="0" y="0" width="230" height="230" rx="14" fill="#130205" opacity="0.7" stroke="#681522" stroke-width="1.5" />
+    <text x="115" y="50" text-anchor="middle" fill="#F1C40F" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" letter-spacing="4">EXCLUSIVE COLLECTION</text>
+    <text x="115" y="90" text-anchor="middle" fill="#FFFFFF" font-family="serif" font-weight="700" font-size="24">NISHA SAREE</text>
+    <text x="115" y="115" text-anchor="middle" fill="#FFEAA7" font-family="serif" font-size="15" letter-spacing="2">SHOWROOM</text>
+    <line x1="40" y1="135" x2="190" y2="135" stroke="url(#sareeGold)" stroke-width="1" />
+    <text x="115" y="165" text-anchor="middle" fill="#ffb3ba" font-family="'Plus Jakarta Sans', sans-serif" font-size="11">Traditional Elegance Redefined</text>
+    <rect x="40" y="185" width="150" height="28" rx="14" fill="url(#sareeGold)" />
+    <text x="115" y="203" text-anchor="middle" fill="#24070b" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="10" letter-spacing="1">SOCIAL MEDIA DESIGN</text>
+  </g>
+</svg>

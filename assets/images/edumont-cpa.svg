@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cpaBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a1931" />
+      <stop offset="50%" stop-color="#051024" />
+      <stop offset="100%" stop-color="#020712" />
+    </linearGradient>
+    <linearGradient id="neonCyan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00D2FF" />
+      <stop offset="100%" stop-color="#0055FF" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#cpaBg)" />
+
+  <g stroke="#0e2954" stroke-width="0.8" opacity="0.6">
+    <line x1="50" y1="0" x2="50" y2="400" />
+    <line x1="150" y1="0" x2="150" y2="400" />
+    <line x1="250" y1="0" x2="250" y2="400" />
+    <line x1="350" y1="0" x2="350" y2="400" />
+    <line x1="450" y1="0" x2="450" y2="400" />
+    <line x1="550" y1="0" x2="550" y2="400" />
+  </g>
+
+  <g transform="translate(60, 80)">
+    <circle cx="110" cy="110" r="90" fill="#0c234b" stroke="url(#neonCyan)" stroke-width="3" />
+    <circle cx="110" cy="85" r="28" fill="#e2e8f0" />
+    <path d="M60 170 C60 135 85 125 110 125 C135 125 160 135 160 170 Z" fill="#00D2FF" />
+    <polygon points="110,135 105,155 110,165 115,155" fill="#f8fafc" />
+    <circle cx="180" cy="50" r="14" fill="#00D2FF" opacity="0.8" />
+    <text x="180" y="54" text-anchor="middle" fill="#020712" font-size="11" font-weight="bold">#1</text>
+  </g>
+
+  <g transform="translate(300, 70)">
+    <rect x="0" y="0" width="250" height="260" rx="16" fill="#07172e" opacity="0.85" stroke="#193b68" stroke-width="1.5" />
+    <text x="125" y="45" text-anchor="middle" fill="#38BDF8" font-family="'Plus Jakarta Sans', sans-serif" font-size="11" letter-spacing="3" font-weight="600">EDUMONT GLOBAL</text>
+    <text x="125" y="115" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="52" font-weight="900" letter-spacing="4">CPA</text>
+    <rect x="55" y="135" width="140" height="24" rx="12" fill="url(#neonCyan)" />
+    <text x="125" y="151" text-anchor="middle" fill="#041226" font-family="'Plus Jakarta Sans', sans-serif" font-size="10" font-weight="800" letter-spacing="1">US CERTIFIED COURSE</text>
+    <text x="125" y="195" text-anchor="middle" fill="#94A3B8" font-family="'Plus Jakarta Sans', sans-serif" font-size="12">Accelerate Global Finance Career</text>
+    
+    <g transform="translate(35, 215)">
+      <circle cx="10" cy="10" r="8" fill="#10B981" />
+      <text x="25" y="14" fill="#E2E8F0" font-size="11" font-family="'Plus Jakarta Sans', sans-serif">100% Placement Support</text>
+    </g>
+  </g>
+</svg>

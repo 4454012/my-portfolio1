@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anubhav Sharma | Graphic &amp; Web Designer</title>
+  <meta name="description" content="Portfolio of Anubhav Sharma - Graphic &amp; Web Designer based in Modinagar, Ghaziabad. Creating visual identities, digital experiences, branding, packaging, and UI/UX.">
+  <meta name="keywords" content="Anubhav Sharma, Graphic Designer, Web Designer, Portfolio, UI/UX, MAAC Ghaziabad, Branding">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="dark">
+  <!-- Interactive Ambient Canvas Background -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Notification Toast -->
+  <div id="toast" class="toast hidden">
+    <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <div class="toast-message" id="toast-message">Message sent successfully!</div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#home" class="brand-logo" aria-label="Anubhav Sharma Home">
+        <span class="logo-box">AS</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-outline btn-sm">Let's Talk</a>
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+          <i class="fa-regular fa-sun sun-icon"></i>
+          <i class="fa-regular fa-moon moon-icon"></i>
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle mobile menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-menu" id="mobile-menu">
+      <ul class="mobile-nav-links">
+        <li><a href="#home" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <li><a href="#work" class="mobile-link">Work</a></li>
+        <li><a href="#skills" class="mobile-link">Skills</a></li>
+        <li><a href="#experience" class="mobile-link">Experience</a></li>
+        <li><a href="#contact" class="mobile-link">Contact</a></li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <a href="#contact" class="btn btn-primary w-100">Let's Talk</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 01. Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            HELLO, I'M
+          </div>
+          <h1 class="hero-title">
+            ANUBHAV<br>
+            <span class="text-gradient">SHARMA</span>
+          </h1>
+          <h2 class="hero-subtitle">Graphic &amp; Web Designer</h2>
+          <p class="hero-description">
+            I create visual identities, digital experiences and designs that make brands stand out.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#work" class="btn btn-primary magnetic-btn">
+              View My Work <i class="fa-solid fa-arrow-right-long"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline magnetic-btn">Let's Talk</a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Behance">
+              <i class="fa-brands fa-behance"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:anubhavsharma@gmail.com" class="social-icon" aria-label="Email">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal-on-scroll delay-1">
+          <div class="photo-card tilt-card" id="hero-photo-card">
+            <div class="photo-frame">
+              <img src="assets/images/anubhav-hero.jpg" alt="Anubhav Sharma - Graphic & Web Designer" class="hero-img">
+              <div class="overlay-glow"></div>
+            </div>
+            <div class="photo-script-badge">
+              <span class="script-text">Design<br>Build<br>Create</span>
+            </div>
+            <div class="photo-status-badge">
+              <span class="pulse-ring"></span>
+              <span>Open for Projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-down-indicator">
+        <a href="#about" class="scroll-down-link">
+          <span class="scroll-mouse"><span class="scroll-wheel"></span></span>
+          <span class="scroll-text">Scroll Down</span>
+        </a>
+      </div>
+    </section>
+    <!-- 02. About Me Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-tag reveal-on-scroll">
+          <span class="section-num">02.</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Visual Column -->
+          <div class="about-visual reveal-on-scroll">
+            <div class="photo-card about-photo-card tilt-card">
+              <div class="about-photo-wrapper">
+                <img src="assets/images/anubhav-about.jpg" alt="Anubhav Sharma in formal suit" class="about-img">
+                <div class="photo-corner corner-tl"></div>
+                <div class="photo-corner corner-br"></div>
+              </div>
+              <div class="experience-floating-pill">
+                <i class="fa-solid fa-award"></i>
+                <div>
+                  <strong>Creative Vision</strong>
+                  <small>Modinagar - Ghaziabad</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Content Column -->
+          <div class="about-details reveal-on-scroll delay-1">
+            <h3 class="about-greeting">
+              Hi, I'm <span class="text-highlight">Anubhav Sharma</span>
+            </h3>
+            <p class="about-role-tag">Graphic &amp; Web Designer</p>
+
+            <div class="about-bio-text">
+              <p>
+                I'm a creative and detail-oriented designer from Modinagar, Ghaziabad. I'm currently pursuing my BCA and have completed my Graphic &amp; Web Designing course from MAAC Ghaziabad.
+              </p>
+              <p>
+                I love turning ideas into clean, impactful designs - whether it's a brand identity, social media post, website or a complete visual experience.
+              </p>
+            </div>
+
+            <!-- Signature -->
+            <div class="signature-box">
+              <span class="anubhav-signature">Anubhav</span>
+            </div>
+
+            <!-- Information Cards Grid -->
+            <div class="about-info-grid">
+              <div class="info-card">
+                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="info-meta">
+                  <span class="info-label">Location</span>
+                  <span class="info-val">Modinagar, Ghaziabad</span>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="info-meta">
+                  <span class="info-label">Education</span>
+                  <span class="info-val">BCA (1st Sem), CCSU</span>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon"><i class="fa-solid fa-palette"></i></div>
+                <div class="info-meta">
+                  <span class="info-label">Course</span>
+                  <span class="info-val">Graphic &amp; Web Designing (MAAC)</span>
+                </div>
+              </div>
+
+              <div class="info-card">
+                <div class="info-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <div class="info-meta">
+                  <span class="info-label">Passion</span>
+                  <span class="info-val">Design - Creativity - Technology</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    <!-- 03. Selected Work Section -->
+    <section class="section work-section" id="work">
+      <div class="container">
+        <div class="work-header">
+          <div class="section-tag reveal-on-scroll">
+            <span class="section-num">03.</span>
+            <h2 class="section-title">Selected Work</h2>
+          </div>
+          <p class="section-desc reveal-on-scroll delay-1">
+            A collection of my best works across different design fields.
+          </p>
+        </div>
+
+        <!-- Filter Navigation Tabs -->
+        <div class="filter-bar reveal-on-scroll delay-1">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="branding">Branding</button>
+          <button class="filter-btn" data-filter="social">Social Media</button>
+          <button class="filter-btn" data-filter="uiux">UI/UX</button>
+          <button class="filter-btn" data-filter="web">Web Design</button>
+          <button class="filter-btn" data-filter="packaging">Packaging</button>
+          <button class="filter-btn" data-filter="print">Print</button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- Project 1: Sharma's Restaurant -->
+          <article class="project-card tilt-card reveal-on-scroll" data-category="branding packaging" data-project="sharma">
+            <div class="project-thumbnail-wrapper">
+              <img src="assets/images/demo-restaurant.jpg" alt="Sharma's Restaurant Branding" class="project-thumb">
+              <div class="project-overlay">
+                <button class="view-project-btn" onclick="openCaseStudy('sharma')">
+                  View Case Study <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-details-text">
+                <h3 class="project-name">Sharma's Restaurant</h3>
+                <p class="project-cat">Branding &amp; Packaging</p>
+              </div>
+              <button class="project-arrow-btn" onclick="openCaseStudy('sharma')" aria-label="Open case study">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 2: Nisha Saree Showroom -->
+          <article class="project-card tilt-card reveal-on-scroll" data-category="social" data-project="nisha">
+            <div class="project-thumbnail-wrapper">
+              <img src="assets/images/demo-saree.jpg" alt="Nisha Saree Showroom Social Media" class="project-thumb">
+              <div class="project-overlay">
+                <button class="view-project-btn" onclick="openCaseStudy('nisha')">
+                  View Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-details-text">
+                <h3 class="project-name">Nisha Saree Showroom</h3>
+                <p class="project-cat">Social Media Design</p>
+              </div>
+              <button class="project-arrow-btn" onclick="openCaseStudy('nisha')" aria-label="Open case study">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 3: EduMont CPA -->
+          <article class="project-card tilt-card reveal-on-scroll" data-category="social" data-project="edumont">
+            <div class="project-thumbnail-wrapper">
+              <img src="assets/images/demo-edumont.jpg" alt="EduMont CPA Social Media Campaign" class="project-thumb">
+              <div class="project-overlay">
+                <button class="view-project-btn" onclick="openCaseStudy('edumont')">
+                  View Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-details-text">
+                <h3 class="project-name">EduMont CPA</h3>
+                <p class="project-cat">Social Media Campaign</p>
+              </div>
+              <button class="project-arrow-btn" onclick="openCaseStudy('edumont')" aria-label="Open case study">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 4: Hoodie Poster -->
+          <article class="project-card tilt-card reveal-on-scroll" data-category="print" data-project="hoodie">
+            <div class="project-thumbnail-wrapper">
+              <img src="assets/images/demo-hoodie.jpg" alt="Hoodie Poster Print Design" class="project-thumb">
+              <div class="project-overlay">
+                <button class="view-project-btn" onclick="openCaseStudy('hoodie')">
+                  View Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-details-text">
+                <h3 class="project-name">Hoodie Poster</h3>
+                <p class="project-cat">Print Design</p>
+              </div>
+              <button class="project-arrow-btn" onclick="openCaseStudy('hoodie')" aria-label="Open case study">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 5: Portfolio Website -->
+          <article class="project-card tilt-card reveal-on-scroll" data-category="uiux web" data-project="portfolio">
+            <div class="project-thumbnail-wrapper">
+              <img src="assets/images/demo-portfolio.jpg" alt="Portfolio Website UI/UX" class="project-thumb">
+              <div class="project-overlay">
+                <button class="view-project-btn" onclick="openCaseStudy('portfolio')">
+                  View Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-details-text">
+                <h3 class="project-name">Portfolio Website</h3>
+                <p class="project-cat">Web Design &amp; UI/UX</p>
+              </div>
+              <button class="project-arrow-btn" onclick="openCaseStudy('portfolio')" aria-label="Open case study">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 6: Logofolio -->
+          <article class="project-card tilt-card reveal-on-scroll" data-category="branding" data-project="logofolio">
+            <div class="project-thumbnail-wrapper">
+              <img src="assets/images/demo-logofolio.jpg" alt="Logofolio Minimalist Logos" class="project-thumb">
+              <div class="project-overlay">
+                <button class="view-project-btn" onclick="openCaseStudy('logofolio')">
+                  View Details <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </button>
+              </div>
+            </div>
+            <div class="project-meta">
+              <div class="project-details-text">
+                <h3 class="project-name">Logofolio</h3>
+                <p class="project-cat">Logo Design</p>
+              </div>
+              <button class="project-arrow-btn" onclick="openCaseStudy('logofolio')" aria-label="Open case study">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>    <!-- 05. Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-tag reveal-on-scroll">
+          <span class="section-num">05.</span>
+          <h2 class="section-title">Skills</h2>
+        </div>
+        <p class="section-desc reveal-on-scroll delay-1">
+          Tools &amp; technologies I work with.
+        </p>
+
+        <div class="skills-grid reveal-on-scroll delay-2">
+          
+          <div class="skill-circle-item" data-tooltip="Adobe Photoshop - 95%">
+            <div class="skill-icon-bubble">
+              <span class="skill-initials ps-badge">Ps</span>
+            </div>
+            <span class="skill-name">Photoshop</span>
+            <div class="skill-bar-mini"><div class="skill-progress" style="width: 95%;"></div></div>
+          </div>
+
+          <div class="skill-circle-item" data-tooltip="Adobe Illustrator - 92%">
+            <div class="skill-icon-bubble">
+              <span class="skill-initials ai-badge">Ai</span>
+            </div>
+            <span class="skill-name">Illustrator</span>
+            <div class="skill-bar-mini"><div class="skill-progress" style="width: 92%;"></div></div>
+          </div>
+
+          <div class="skill-circle-item" data-tooltip="Figma UI/UX - 90%">
+            <div class="skill-icon-bubble figma-bubble">
+              <i class="fa-brands fa-figma"></i>
+            </div>
+            <span class="skill-name">Figma</span>
+            <div class="skill-bar-mini"><div class="skill-progress" style="width: 90%;"></div></div>
+          </div>
+
+          <div class="skill-circle-item" data-tooltip="After Effects - 82%">
+            <div class="skill-icon-bubble">
+              <span class="skill-initials ae-badge">Ae</span>
+            </div>
+            <span class="skill-name">After Effects</span>
+            <div class="skill-bar-mini"><div class="skill-progress" style="width: 82%;"></div></div>
+          </div>
+
+          <div class="skill-circle-item" data-tooltip="Premiere Pro - 80%">
+            <div class="skill-icon-bubble">
+              <span class="skill-initials pr-badge">Pr</span>
+            </div>
+            <span class="skill-name">Premiere Pro</span>
+            <div class="skill-bar-mini"><div class="skill-progress" style="width: 80%;"></div></div>
+          </div>
+
+          <div class="skill-circle-item" data-tooltip="HTML5 Semantic Coding - 88%">
+            <div class="skill-icon-bubble html-bubble">
+              <span class="code-bracket">&lt;/&gt;</span>
+            </div>
+            <span class="skill-name">HTML</span>
+            <div class="skill-bar-mini"><div class="skill-progress" style="width: 88%;"></div></div>
+          </div>
+
+          <div class="skill-circle-item" data-tooltip="CSS3 &amp; Animations - 86%">
+            <div class="skill-icon-bubble css-bubble">
+              <i class="fa-brands fa-css3-alt"></i>
+            </div>
+            <span class="skill-name">CSS</span>
+            <div class="skill-bar-mini"><div class="skill-progress" style="width: 86%;"></div></div>
+          </div>
+
+          <div class="skill-circle-item" data-tooltip="Bootstrap Framework - 85%">
+            <div class="skill-icon-bubble bs-bubble">
+              <i class="fa-brands fa-bootstrap"></i>
+            </div>
+            <span class="skill-name">Bootstrap</span>
+            <div class="skill-bar-mini"><div class="skill-progress" style="width: 85%;"></div></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. Experience & Education Section -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-tag reveal-on-scroll">
+          <span class="section-num">06.</span>
+          <h2 class="section-title">Experience &amp; Education</h2>
+        </div>
+        <p class="section-desc reveal-on-scroll delay-1">
+          My journey so far.
+        </p>
+
+        <div class="journey-columns">
+          <!-- Education Column -->
+          <div class="journey-col reveal-on-scroll">
+            <div class="journey-heading">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h3>Education</h3>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2021 - 2023</span>
+                  <h4 class="timeline-title">10th / 12th (CBSE)</h4>
+                  <p class="timeline-org">Dayawati Modi Public School</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot active-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2024 - Present</span>
+                  <h4 class="timeline-title">BCA (1st Sem)</h4>
+                  <p class="timeline-org">CCSU (Chaudhary Charan Singh University)</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot active-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">2024 - Present</span>
+                  <h4 class="timeline-title">Graphic &amp; Web Designing</h4>
+                  <p class="timeline-org">MAAC Ghaziabad</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Experience Column -->
+          <div class="journey-col reveal-on-scroll delay-1">
+            <div class="journey-heading">
+              <i class="fa-solid fa-briefcase"></i>
+              <h3>Experience</h3>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot active-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">Feb 2025</span>
+                  <h4 class="timeline-title">Graphic Designer Intern</h4>
+                  <p class="timeline-org">Yantra Media</p>
+                  <span class="timeline-dates">(Worked from 4 Feb - 20 Feb)</span>
+                  <p class="timeline-summary">
+                    Designed high-engagement social media creatives, branded promotional kits, and digital graphic assets.
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <span class="timeline-year">Ongoing</span>
+                  <h4 class="timeline-title">Freelance Visual Designer</h4>
+                  <p class="timeline-org">Independent Clients</p>
+                  <p class="timeline-summary">
+                    Delivering restaurant branding, apparel prints, and modern UI mockups for emerging startups and businesses.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>    <!-- 07. Let's Work Together / Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-tag reveal-on-scroll">
+          <span class="section-num">07.</span>
+          <h2 class="section-title">Let's Work Together</h2>
+        </div>
+        <p class="section-desc reveal-on-scroll delay-1">
+          Have a project in mind? Let's create something great.
+        </p>
+
+        <div class="contact-grid">
+          <!-- Left Info Cards -->
+          <div class="contact-info-col reveal-on-scroll">
+            
+            <div class="contact-card contact-card-clickable" onclick="window.location.href='mailto:anubhavsharma@gmail.com'">
+              <div class="contact-card-icon"><i class="fa-regular fa-envelope"></i></div>
+              <div class="contact-card-details">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">anubhavsharma@gmail.com</span>
+              </div>
+              <button class="copy-btn" onclick="copyContact('anubhavsharma@gmail.com', event)" title="Copy email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <div class="contact-card contact-card-clickable" onclick="window.location.href='tel:+919876543210'">
+              <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-card-details">
+                <span class="contact-label">Phone</span>
+                <span class="contact-value">+91 98765 43210</span>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-card-details">
+                <span class="contact-label">Location</span>
+                <span class="contact-value">Modinagar, Ghaziabad</span>
+              </div>
+            </div>
+
+            <!-- Follow Me Box -->
+            <div class="follow-box">
+              <h4 class="follow-title">Follow Me</h4>
+              <div class="follow-icons">
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="follow-btn" aria-label="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="follow-btn" aria-label="Behance">
+                  <i class="fa-brands fa-behance"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="follow-btn" aria-label="LinkedIn">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Working Form -->
+          <div class="contact-form-col reveal-on-scroll delay-1">
+            <form id="contact-form" class="contact-form" onsubmit="handleContactSubmit(event)">
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" name="name" class="form-input" placeholder="e.g. John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="service" class="form-label">Service Needed</label>
+                <select id="service" name="service" class="form-select">
+                  <option value="branding">Brand Identity &amp; Packaging</option>
+                  <option value="web">Web Design &amp; UI/UX</option>
+                  <option value="social">Social Media Design</option>
+                  <option value="print">Print &amp; Merchandise</option>
+                  <option value="other">Other Creative Project</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Tell me about your project and requirements..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100 magnetic-btn" id="submit-btn">
+                <span>Send a Message</span> <i class="fa-solid fa-arrow-right-long"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Project Case Study Modal (matching mockup 04) -->
+  <div id="case-study-modal" class="modal-overlay hidden" aria-hidden="true" role="dialog">
+    <div class="modal-container">
+      <div class="modal-header">
+        <button class="modal-back-btn" onclick="closeCaseStudy()">
+          <i class="fa-solid fa-arrow-left"></i> Back to Projects
+        </button>
+        <button class="modal-close-btn" onclick="closeCaseStudy()" aria-label="Close modal">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body" id="modal-content">
+        <!-- Injected via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#home" class="brand-logo footer-logo">
+          <span class="logo-box">AS</span>
+        </a>
+        <p class="footer-copy">&copy; 2025 Anubhav Sharma. All rights reserved.</p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-right">
+        <a href="#home" class="back-to-top" aria-label="Back to Top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript Bundle -->
+  <script src="js/main.js"></script>
+</body>
+</html>

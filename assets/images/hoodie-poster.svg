@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="darkPoster" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#18181b" />
+      <stop offset="100%" stop-color="#09090b" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="url(#darkPoster)" />
+
+  <g transform="translate(160, 30)">
+    <rect x="0" y="0" width="280" height="340" rx="8" fill="#121214" stroke="#27272a" stroke-width="2" />
+    
+    <text x="20" y="30" fill="#71717a" font-family="monospace" font-size="9">FIG. 04 / EDITION 2025</text>
+    <text x="260" y="30" text-anchor="end" fill="#71717a" font-family="monospace" font-size="9">STREETWEAR</text>
+
+    <g transform="translate(60, 60)">
+      <path d="M40 20 L60 0 L100 0 L120 20 L150 50 L135 80 L115 65 L115 160 L45 160 L45 65 L25 80 L10 50 Z" fill="#202024" stroke="#3f3f46" stroke-width="1.5" />
+      <path d="M60 15 C70 40 90 40 100 15" stroke="#52525b" stroke-width="2" fill="none" />
+      <path d="M55 120 L105 120 L95 145 L65 145 Z" fill="#18181b" stroke="#3f3f46" stroke-width="1" />
+      <rect x="52" y="70" width="56" height="22" fill="#09090b" rx="3" />
+      <text x="80" y="81" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="7" letter-spacing="1">STAY</text>
+      <text x="80" y="89" text-anchor="middle" fill="#a1a1aa" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="6" letter-spacing="1">FOCUSED</text>
+    </g>
+
+    <text x="140" y="260" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="20" font-weight="900" letter-spacing="5">OVERSIZED</text>
+    <text x="140" y="280" text-anchor="middle" fill="#e4e4e7" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" letter-spacing="3">HOODIE APPAREL</text>
+    <text x="140" y="310" text-anchor="middle" fill="#71717a" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" letter-spacing="2">PRINT DESIGN &amp; MERCH</text>
+  </g>
+</svg>

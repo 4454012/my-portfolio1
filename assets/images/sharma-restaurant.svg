@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111f18" />
+      <stop offset="50%" stop-color="#0a120e" />
+      <stop offset="100%" stop-color="#040806" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5DF9E" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#AA771C" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="600" height="400" fill="url(#bgGrad)" />
+  <circle cx="150" cy="120" r="140" fill="#D4AF37" opacity="0.04" />
+  
+  <g transform="translate(60, 90)">
+    <rect x="0" y="20" width="130" height="190" rx="8" fill="#a87f54" />
+    <path d="M0 20 L25 0 L105 0 L130 20 Z" fill="#936c43" />
+    <rect x="25" y="60" width="80" height="85" rx="4" fill="#fdfbf7" opacity="0.9" />
+    <circle cx="65" cy="85" r="14" fill="#111f18" />
+    <path d="M65 77 L69 89 L57 81 L73 81 L61 89 Z" fill="#D4AF37" />
+    <rect x="38" y="108" width="54" height="4" rx="2" fill="#111f18" />
+    <rect x="45" y="118" width="40" height="3" rx="1.5" fill="#888" />
+  </g>
+
+  <g transform="translate(210, 140)">
+    <circle cx="65" cy="65" r="60" fill="#192820" stroke="url(#goldGrad)" stroke-width="3" />
+    <circle cx="65" cy="65" r="48" fill="#e89836" opacity="0.85" />
+    <circle cx="50" cy="50" r="12" fill="#ffd175" />
+    <circle cx="75" cy="52" r="10" fill="#ffd175" />
+    <circle cx="60" cy="75" r="11" fill="#f7ab48" />
+  </g>
+
+  <g transform="translate(340, 50)">
+    <rect x="0" y="0" width="210" height="300" rx="12" fill="#0d1813" stroke="#253e31" stroke-width="2" />
+    <circle cx="105" cy="90" r="40" fill="#14241c" stroke="url(#goldGrad)" stroke-width="2" />
+    <path d="M105 65 C108 75 118 82 118 90 C118 98 105 105 105 105 C105 105 92 98 92 90 C92 82 102 75 105 65 Z" fill="url(#goldGrad)" />
+    <path d="M105 78 C115 82 125 90 120 100 C115 103 105 105 105 105" stroke="url(#goldGrad)" stroke-width="2" fill="none" />
+    <path d="M105 78 C95 82 85 90 90 100 C95 103 105 105 105 105" stroke="url(#goldGrad)" stroke-width="2" fill="none" />
+    
+    <text x="105" y="160" text-anchor="middle" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="15" letter-spacing="2">SHARMA'S</text>
+    <text x="105" y="180" text-anchor="middle" fill="#D4AF37" font-family="'Plus Jakarta Sans', sans-serif" font-weight="500" font-size="11" letter-spacing="3">RESTAURANT</text>
+    <line x1="60" y1="195" x2="150" y2="195" stroke="#334f40" stroke-width="1" />
+    <text x="105" y="215" text-anchor="middle" fill="#8ca899" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" letter-spacing="1">AUTHENTIC &amp; FRESH</text>
+    <rect x="45" y="240" width="120" height="26" rx="13" fill="#D4AF37" opacity="0.15" stroke="url(#goldGrad)" stroke-width="1" />
+    <text x="105" y="257" text-anchor="middle" fill="#F5DF9E" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="600" letter-spacing="1">BRAND IDENTITY</text>
+  </g>
+</svg>

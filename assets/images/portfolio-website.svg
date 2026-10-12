@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="screenBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="cyanPurple" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="400" fill="#090d16" />
+
+  <g transform="translate(100, 50)">
+    <rect x="20" y="20" width="360" height="225" rx="12" fill="#1e293b" stroke="#334155" stroke-width="2" />
+    <circle cx="200" cy="30" r="3" fill="#475569" />
+    <rect x="28" y="38" width="344" height="198" rx="4" fill="url(#screenBg)" />
+    
+    <rect x="36" y="44" width="328" height="20" rx="3" fill="#1e293b" opacity="0.6" />
+    <text x="46" y="58" fill="#38bdf8" font-size="9" font-weight="bold">AS</text>
+    <circle cx="330" cy="54" r="5" fill="#818cf8" />
+    <circle cx="344" cy="54" r="5" fill="#38bdf8" />
+
+    <text x="50" y="90" fill="#94a3b8" font-size="8">HELLO, I'M</text>
+    <text x="50" y="112" fill="#ffffff" font-size="18" font-weight="900" font-family="'Plus Jakarta Sans', sans-serif">ANUBHAV SHARMA</text>
+    <text x="50" y="128" fill="url(#cyanPurple)" font-size="10" font-weight="600">Graphic &amp; Web Designer</text>
+    <text x="50" y="145" fill="#64748b" font-size="8">Creating visual identities &amp; digital experiences.</text>
+    
+    <rect x="50" y="160" width="65" height="18" rx="9" fill="#38bdf8" />
+    <text x="82" y="172" fill="#020617" font-size="7" font-weight="bold" text-anchor="middle">View Work</text>
+    
+    <rect x="230" y="75" width="115" height="140" rx="6" fill="#1e293b" stroke="#38bdf8" stroke-width="1" />
+    <circle cx="287" cy="120" r="30" fill="#334155" />
+    <path d="M255 175 C255 150 270 145 287 145 C304 145 319 150 319 175 Z" fill="#64748b" />
+    
+    <path d="M0 245 L400 245 L380 260 L20 260 Z" fill="#334155" />
+    <rect x="160" y="245" width="80" height="5" rx="2" fill="#64748b" />
+  </g>
+</svg>
